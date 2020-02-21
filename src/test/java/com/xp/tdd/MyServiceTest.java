@@ -1,6 +1,9 @@
 package com.xp.tdd;
 
 import org.junit.Test;
+
+import java.util.HashMap;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -71,6 +74,29 @@ public class MyServiceTest {
 
     }
 
-    //5. Fake
+    //5. Fake - a real implementation of Authorizer but not production level
+    private class FakeAuthorizer implements Authorizer {
+        HashMap<String, String> repo = new HashMap<>();
+
+        public void add(String username, String password) {
+            repo.put(username, password);
+        }
+
+        public Boolean authorize(String username, String password) {
+            return password.equals(repo.get(username));
+        }
+    }
+
+    @Test
+    public void testFake() {
+        FakeAuthorizer authorizerFake = new FakeAuthorizer();
+        authorizerFake.add("testuser","testpassword");
+
+        assertTrue(new MyService(authorizerFake).criticalAction("testuser","testpassword"));
+
+        assertFalse(new MyService(authorizerFake).criticalAction("testuser2","testpassword2"));
+
+    }
+
 
 }

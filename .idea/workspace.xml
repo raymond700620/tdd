@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85090b4a-8bea-4e11-8da7-46c0be220fa6" name="Default Changelist" comment="" />
+    <list default="true" id="85090b4a-8bea-4e11-8da7-46c0be220fa6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xp/tdd/MyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xp/tdd/MyServiceTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -15,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-747945010">
@@ -39,12 +51,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1239" />
+          <entry key="java" value="1561" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1239" />
+          <entry key="JAVA" value="1561" />
         </counts>
       </usages-collector>
     </session>
@@ -72,14 +84,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/xp/tdd/MyServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+            <state relative-caret-position="1177">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#296#297#0" expanded="true" />
                 <element signature="e#331#332#0" expanded="true" />
                 <element signature="e#762#763#0" expanded="true" />
                 <element signature="e#797#798#0" expanded="true" />
+                <element signature="e#2239#2240#0" expanded="true" />
+                <element signature="e#2272#2273#0" expanded="true" />
+                <element signature="e#2369#2370#0" expanded="true" />
+                <element signature="e#2417#2418#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,6 +119,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -555,6 +574,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -624,7 +644,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582258523764" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582260327186" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -643,7 +663,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MyServiceTest">
+  <component name="RunManager" selected="Gradle.MyServiceTest.testFake">
     <configuration name="MyServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -663,12 +683,12 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
-    <configuration name="MyServiceTest.testDummy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MyServiceTest.testFake" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.xp.tdd.MyServiceTest.testDummy&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.xp.tdd.MyServiceTest.testFake&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -740,19 +760,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.MyServiceTest.testDummy" />
       <item itemvalue="Gradle.MyServiceTest.testStub" />
       <item itemvalue="Gradle.MyServiceTest.testSpy" />
       <item itemvalue="Gradle.MyServiceTest.testMock" />
       <item itemvalue="Gradle.MyServiceTest" />
+      <item itemvalue="Gradle.MyServiceTest.testFake" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MyServiceTest.testFake" />
         <item itemvalue="Gradle.MyServiceTest" />
         <item itemvalue="Gradle.MyServiceTest.testMock" />
         <item itemvalue="Gradle.MyServiceTest.testSpy" />
         <item itemvalue="Gradle.MyServiceTest.testStub" />
-        <item itemvalue="Gradle.MyServiceTest.testDummy" />
       </list>
     </recent_temporary>
   </component>
@@ -770,9 +790,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyServiceTest_testDummy - 2020.02.21 at 12h 33m 04s.xml">
-      <configuration name="MyServiceTest.testDummy" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="MyServiceTest_testDummy - 2020.02.21 at 12h 34m 12s.xml">
       <configuration name="MyServiceTest.testDummy" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -797,11 +814,17 @@
     <history-entry file="MyServiceTest - 2020.02.21 at 12h 45m 25s.xml">
       <configuration name="MyServiceTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="MyServiceTest - 2020.02.21 at 12h 51m 13s.xml">
+      <configuration name="MyServiceTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MyServiceTest_testFake - 2020.02.21 at 12h 57m 20s.xml">
+      <configuration name="MyServiceTest.testFake" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18437119" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.124542125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -857,14 +880,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xp/tdd/MyServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+        <state relative-caret-position="1177">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#296#297#0" expanded="true" />
             <element signature="e#331#332#0" expanded="true" />
             <element signature="e#762#763#0" expanded="true" />
             <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#2239#2240#0" expanded="true" />
+            <element signature="e#2272#2273#0" expanded="true" />
+            <element signature="e#2369#2370#0" expanded="true" />
+            <element signature="e#2417#2418#0" expanded="true" />
           </folding>
         </state>
       </provider>
