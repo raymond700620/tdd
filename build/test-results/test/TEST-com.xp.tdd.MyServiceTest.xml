@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.xp.tdd.MyServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-02-21T04:45:24" hostname="rfangs-MBP-15" time="0.293">
+  <properties/>
+  <testcase name="testSpy" classname="com.xp.tdd.MyServiceTest" time="0.001"/>
+  <testcase name="testDummy" classname="com.xp.tdd.MyServiceTest" time="0.001"/>
+  <testcase name="testMock" classname="com.xp.tdd.MyServiceTest" time="0.29"/>
+  <testcase name="testStub" classname="com.xp.tdd.MyServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
